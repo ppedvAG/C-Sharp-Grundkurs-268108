@@ -1,4 +1,5 @@
 <Solution>
-  <Project Path="Demo/Demo.csproj" />
+  <Project Path="Demo-003/Demo-003.csproj" />
+  <Project Path="Demo/Demo-001-002.csproj" />
   <Project Path="Lab-02/Lab-02.csproj" />
 </Solution>
