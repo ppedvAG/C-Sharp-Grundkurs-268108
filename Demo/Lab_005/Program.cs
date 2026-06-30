@@ -15,9 +15,9 @@
                 double zahl2 = GetInput("Gib eine weitere Zahl ein: ");
 
                 // Verfügbare Operationen anzeigen
-                foreach (Rechenoperation op in Enum.GetValues<Rechenoperation>())
+                for (int i =; i<5;i++)
                 {
-                    Console.WriteLine($"{(int)op}: {op}");
+                    Console.WriteLine($"{i}: {(Rechenoperation)i}");
                 }
 
                 // Rechenoperation auswählen und berechnen
