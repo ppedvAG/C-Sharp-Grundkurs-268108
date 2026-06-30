@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="Demo-003/Demo-003.csproj" />
+  <Project Path="Demo-004/Demo-004.csproj" Id="11103eac-bc0b-4979-bacf-695dc61d1031" />
   <Project Path="Demo/Demo-001-002.csproj" />
   <Project Path="Lab-003/Lab-003.csproj" />
   <Project Path="Lab-02/Lab-002.csproj" />
