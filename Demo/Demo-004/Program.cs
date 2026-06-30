@@ -1,4 +1,4 @@
-﻿namespace Demo004
+﻿namespace Demo_004
 {
     // Wenn Conde von anderen Namespaces verwendet werden soll, dann using namespace; schreiben
     using asdf;
