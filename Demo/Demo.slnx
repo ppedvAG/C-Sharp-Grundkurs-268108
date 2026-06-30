@@ -1,7 +1,8 @@
 <Solution>
-  <Project Path="Demo-003/Demo-003.csproj" />
+  <Project Path="Demo-003/Demo_003.csproj" />
   <Project Path="Demo-004/Demo_004.csproj" Id="11103eac-bc0b-4979-bacf-695dc61d1031" />
   <Project Path="Demo/Demo_001_002.csproj" />
+  <Project Path="Demo_005/Demo_005.csproj" Id="92acd970-7048-4e03-b0af-71c9fd643d67" />
   <Project Path="Lab-003/Lab_003.csproj" />
   <Project Path="Lab-004/Lab_004.csproj" Id="caa0c3d3-9825-4c83-9b1b-8113e6f882fe" />
   <Project Path="Lab-02/Lab_002.csproj" />
