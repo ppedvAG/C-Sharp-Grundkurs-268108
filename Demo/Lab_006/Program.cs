@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             #region Lab 06: Fahrzeug-Klasse
             //Deklaration einer Fahrzeug-Variablen und Initialisierung mittels einer Fahrzeug-Instanz
             Fahrzeug fz1 = new Fahrzeug("Mercedes", 190, 23000);

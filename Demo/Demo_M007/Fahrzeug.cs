@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab_006
+namespace Demo_M007
 {
     public class Fahrzeug
     {
@@ -17,6 +18,9 @@ namespace Lab_006
         public double Preis { get; set; }
         public bool MotorLaeuft { get; set; }
 
+        // Statische Eigenschaft: Existiert nur einmal Systemweit und wird über den Klassennamen angesprochen (nicht über ein Objekt)
+        public static double PreisGes { get; private set; }
+
         //Konstruktor mit Übergabeparametern und Standartwerten
         public Fahrzeug(string name, int maxG, double preis)
         {
@@ -25,6 +29,21 @@ namespace Lab_006
             this.Preis = preis;
             this.AktGeschwindigkeit = 0;
             this.MotorLaeuft = false;
+
+            PreisGes += Preis;
+        }
+
+        // Destruktor - wird aufgerufen, wenn Garbage Collector ein Objekt zerstört
+        ~Fahrzeug() 
+        {
+            PreisGes -= this.Preis*0.99;
+        }
+
+        // statische Methode: schreibt den Gesammten Preis in die Konsole
+        public static void AusgabePreisGes()
+        {
+            Console.WriteLine($"Preis Gesammt:  {PreisGes:N2} $");
+            //Console.WriteLine($"Preis Gesammt:  {PreisGes.ToString("C", CultureInfo.CreateSpecificCulture("en-US"))}");
         }
 
         //Methode zur Ausgabe von Objektinformationen

@@ -4,6 +4,7 @@
   <Project Path="Demo/Demo_001_002.csproj" />
   <Project Path="Demo_005/Demo_005.csproj" Id="92acd970-7048-4e03-b0af-71c9fd643d67" />
   <Project Path="Demo_006/Demo_006.csproj" Id="4168d17a-4ed1-4509-a668-57e7d93f8ac6" />
+  <Project Path="Demo_M007/Demo_M007.csproj" Id="bae45c18-8358-4342-bd11-a1f345a6b7e9" />
   <Project Path="Lab-003/Lab_003.csproj" />
   <Project Path="Lab-004/Lab_004.csproj" Id="caa0c3d3-9825-4c83-9b1b-8113e6f882fe" />
   <Project Path="Lab-02/Lab_002.csproj" />
