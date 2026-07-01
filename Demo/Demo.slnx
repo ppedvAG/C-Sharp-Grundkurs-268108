@@ -9,4 +9,5 @@
   <Project Path="Lab-02/Lab_002.csproj" />
   <Project Path="Lab_005/Lab_005.csproj" Id="0695488c-6713-4ab1-a9f9-7b0129079b94" />
   <Project Path="Lab_005_gemeinsam/Lab_005_gemeinsam.csproj" Id="6a92ae56-6f5f-41f3-8b0d-556849d8851c" />
+  <Project Path="Lab_006/Lab_006.csproj" Id="fd4242c3-8158-4033-929f-aee9fc7de9ec" />
 </Solution>
