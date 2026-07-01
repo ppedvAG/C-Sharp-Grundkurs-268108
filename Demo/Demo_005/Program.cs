@@ -1,6 +1,6 @@
 ﻿namespace Demo_005
 {
-    class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
@@ -38,7 +38,7 @@
                 $"Min: {min}\n" +
                 $"Max: {max}\n");
         }
-        static void SummeAusgeben(int zahl1, int zahl2)
+        public static void SummeAusgeben(int zahl1, int zahl2)
         {
             int summe = zahl1 + zahl2;
             Console.WriteLine($"Die Summe von {zahl1} und {zahl2} ist {summe}");
@@ -52,6 +52,7 @@
             // der RETRUN- Befeahl weist die Methode an,  einen Wert als Rückgabewert an den Aufrufer zurückzugeben
             return zahl1 + zahl2; // Retrun beendet außerdem die Funktion!
         }
+        int summe = Addiere(1, 2);
 
         // Funktionen dürfen nicht gleich heißen
         // AUSNAHME: wenn die Parameter unterschiedlich sind

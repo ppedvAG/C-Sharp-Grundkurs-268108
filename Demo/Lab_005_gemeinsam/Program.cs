@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
+
 namespace Lab_005_gemeinsam
 {
     class Program
