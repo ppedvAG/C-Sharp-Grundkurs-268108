@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo_007
+namespace Lab_007
 {
     public class Fahrzeug
     {
@@ -18,33 +17,16 @@ namespace Demo_007
         public double Preis { get; set; }
         public bool MotorLaeuft { get; set; }
 
-        // Statische Eigenschaft: Existiert nur einmal Systemweit und wird über den Klassennamen angesprochen (nicht über ein Objekt)
-        public static double PreisGes { get; private set; }
-
+        // STEHT UNTEN IN REGION LAB 07 
         //Konstruktor mit Übergabeparametern und Standartwerten
-        public Fahrzeug(string name, int maxG, double preis)
-        {
-            this.Name = name;
-            this.MaxGeschwindigkeit = maxG;
-            this.Preis = preis;
-            this.AktGeschwindigkeit = 0;
-            this.MotorLaeuft = false;
-
-            PreisGes += Preis;
-        }
-
-        // Destruktor - wird aufgerufen, wenn Garbage Collector ein Objekt zerstört
-        ~Fahrzeug() 
-        {
-            PreisGes -= this.Preis*0.99;
-        }
-
-        // statische Methode: schreibt den Gesammten Preis in die Konsole
-        public static void AusgabePreisGes()
-        {
-            Console.WriteLine($"Preis Gesammt:  {PreisGes:N2} $");
-            //Console.WriteLine($"Preis Gesammt:  {PreisGes.ToString("C", CultureInfo.CreateSpecificCulture("en-US"))}");
-        }
+        //public Fahrzeug(string name, int maxG, double preis)
+        //{
+        //    this.Name = name;
+        //    this.MaxGeschwindigkeit = maxG;
+        //    this.Preis = preis;
+        //    this.AktGeschwindigkeit = 0;
+        //    this.MotorLaeuft = false;
+        //}
 
         //Methode zur Ausgabe von Objektinformationen
         public string Info()
@@ -108,6 +90,30 @@ namespace Demo_007
                 //    $"{this.AktGeschwindigkeit}km/h");
             }
         }
+
+        #endregion
+
+        #region Lab 07: Statische Member, Destruktor
+
+        public static int AnzahlFahrzeuge { get; set; } = 0;
+
+
+        public Fahrzeug(string name, int maxG, double preis)
+        {
+            AnzahlFahrzeuge++;
+            this.Name = name;
+            this.MaxGeschwindigkeit = maxG;
+            this.Preis = preis;
+            this.AktGeschwindigkeit = 0;
+            this.MotorLaeuft = false;
+        }
+
+        public static string ZeigeAnzahlFahrzeuge()
+        {
+            return $"Es wurden {AnzahlFahrzeuge} Fahrzeuge gebaut.";
+        }
+
+        
 
         #endregion
     }
